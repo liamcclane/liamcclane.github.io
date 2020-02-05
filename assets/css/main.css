@@ -3234,7 +3234,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/trees.jfif"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/trees.jfif");
+			background-image: url("../../images/flowers2.jfif"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/flowers2.jfif");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: no-repeat,								no-repeat,													no-repeat;
@@ -3259,7 +3259,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			/* background-image: url('../../images/trees.jfif'); */
-			background: #1e252d;
+			background-image:linear-gradient(to bottom right, rgb(109, 109, 109),rgb(94, 114, 143),rgb(51, 53, 185));
 			content: '';
 			display: block;
 			height: 100%;
