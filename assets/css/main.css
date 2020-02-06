@@ -3233,12 +3233,12 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/flowers2.jfif"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/flowers2.jfif");
+			background-image: url("../../images/wild_flowers.png"), linear-gradient(0deg, rgba(57, 139, 139, 0.1), rgba(88, 47, 47, 0.1)), url("../../images/wild_flowers.png");
+			/* background-color: rgba(13, 243, 44, 0.37); */
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
-			background-repeat: no-repeat,								no-repeat,													no-repeat;
-			background-attachment: scroll,								scroll,														scroll;
+			background-repeat: repeat,								repeat,													repeat;
+			/* background-attachment: scroll,								scroll,														scroll; */
 			z-index: -1;
 		}
 
@@ -3250,16 +3250,16 @@ input, select, textarea {
 
 		#wrapper.fade-in:before {
 			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 10s ease-in-out;
+			-webkit-transition: opacity 10s ease-in-out;
+			-ms-transition: opacity 10s ease-in-out;
+			transition: opacity 10s ease-in-out;
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			/* background-image: url('../../images/trees.jfif'); */
-			background-image:linear-gradient(to bottom right, rgb(109, 109, 109),rgb(94, 114, 143),rgb(51, 53, 185));
+			background-image:linear-gradient(to bottom right, rgba(48, 219, 162, 0.432),rgba(54, 175, 135, 0.493),rgba(51, 173, 230, 0.404));
 			content: '';
 			display: block;
 			height: 100%;
@@ -3271,7 +3271,7 @@ input, select, textarea {
 		}
 
 		body.is-preload #wrapper.fade-in:before {
-			opacity: 1;
+			opacity: .5;
 		}
 
 		@media screen and (orientation: portrait) {
@@ -3401,7 +3401,7 @@ input, select, textarea {
 		}
 
 		#intro + #header {
-			margin-top: -20rem;
+			margin-top: -2rem;
 		}
 
 			#intro + #header .logo {
@@ -3768,7 +3768,7 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
