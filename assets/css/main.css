@@ -4693,3 +4693,13 @@ input, select, textarea {
 	.myIcons{
 		height: 40px;
 	}
+
+	#csus{
+		position: relative;
+		left: -115px;
+		top: -57px;
+	}
+	.major img:nth-child(2){
+		outline: 1px dotted red;
+		height: 20px;
+	}
