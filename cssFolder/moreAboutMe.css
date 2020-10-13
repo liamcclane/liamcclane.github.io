@@ -1,0 +1,37 @@
+/* * {
+    outline: 1px dotted red;
+} */
+
+article {
+    background-color: rgba(127, 255, 212, 0);
+}
+
+article img {
+    max-height: 300px;
+}
+
+aside {
+    width: 30%;
+    float: left;
+    font-style: italic;
+}
+
+.this-image{
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+
+.card .row:nth-child(2n){
+    margin: 10px;
+    flex-direction: row-reverse;
+}
+.card-img{
+    max-width: 320px;
+    max-height: 200px;
+    min-width: 300px;
+}
+.squ-img {
+    max-width: 200px;
+    max-height: 200px;
+}

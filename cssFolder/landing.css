@@ -1,0 +1,105 @@
+.jumbotron{
+    padding: 40px 20px;
+    /* color: rgb(13, 14, 14); */
+    color: rgb(255, 255, 255);
+
+    /* code background, kinda boring */
+    /* background-image:url('./../assests/codeyBG.jpg'); */
+    
+    /* purply keyboard one */
+    /* background-image:url('./../assests/keyboardBG.jpg'); */
+    
+    /*this on need frost behind name */
+    /* background-image:url('./../assests/computerBG2.jpg'); */
+    
+    /*this on need dark behind name */
+    background-image:url('./../assests/computerBG3.jpg'); 
+
+
+    /* background-image:url('./../assests/codeyBG2.jpg'); boring */
+    /* background-image:url('./../assests/codeyBG3.jpg'); BLurry */
+    /* background-image:url('./../assests/computerBG.jpg'); */
+    /* background-image:url('./../assests/keyboardBG2.jpg'); NO */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron img {
+    display: block;
+    border: 0px solid black;
+    border-radius: 1em;
+    margin: 0px auto 20px;
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.698) ;
+}
+.jumbo-background {
+    border-radius: 1em;
+    background-color: rgba(26, 25, 25, 0.507);
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.frost {
+    background-color: rgba(255, 255, 255, 0.712);
+}
+.card {
+    margin: 10px auto;
+    padding: 10px 10px 10px 10px;
+}
+.card-img-top {
+    margin: 0px auto;
+    width: 89%;
+    max-height: 500px;
+}
+.my-h1 {
+    padding: 20px;
+}
+.my-wrapper {
+    /* too busy */
+    /* background-image: url('./../assests/repeatedLeaves.jpg'); */
+    
+    /* 7/10 not bad needs lighter card backgrounds*/
+    background-image: url('./../assests/repreatedBG.jpg');
+    
+    /* modern "hard looking" */
+    /* background-image: url('./../assests/repeatedBrick.jpg'); */
+    
+    /* modern "too rustic" */
+    /* background-image: url('./../assests/repeatedBrickRed.jpg'); */
+    
+    /* sporadic coloring */
+    /* background-image: url('./../assests/repeatedTriangles.jpg'); */
+    
+    /* too cutieys */
+    /* background-image: url('./../assests/repeatedCat.jpg'); */
+    
+    /* background-image: linear-gradient( white,rgb(255, 236, 244),white); */
+
+
+}
+
+/** Small devices (landscape phones, 576px and up) **/
+/* @media (min-width: 576px) {
+    .card{
+        width: 89%;
+    }
+} */
+
+/** Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .card{
+        width: 45%;
+    }
+}
+
+/** Large devices (desktops, 992px and up)*/
+/* @media (min-width: 992px) {
+    .card{
+        width: 89%;
+    }
+} */
+
+/** Extra large devices (large desktops, 1200px and up)*/
+/* @media (min-width: 1200px) {
+    .card{
+        width: 89%;
+    }
+} */
