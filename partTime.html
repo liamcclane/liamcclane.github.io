@@ -106,10 +106,10 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Scribnerbend Vineyards</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">June 201 - Jan 2019</small></p>
+                        <h5 class="card-title" id="job1Title"></h5>
+                        <p class="card-text" id="job1Company"></p>
+                        <p class="card-text" id="job1Description"></p>
+                        <p class="card-text"><small class="text-muted" id="job1dates"></small></p>
                     </div>
                 </div>
             </div>
@@ -119,10 +119,10 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">BJs Restaurant & Brewhouse</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title" id="job2Title"></h5>
+                        <p class="card-text" id="job2Company"></p>
+                        <p class="card-text" id="job2Description"></p>
+                        <p class="card-text"><small class="text-muted" id="job2dates"></small></p>
                     </div>
                 </div>
             </div>
@@ -132,10 +132,10 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title" id="job3Title"></h5>
+                        <p class="card-text" id="job3Company"></p>
+                        <p class="card-text" id="job3Description"></p>
+                        <p class="card-text"><small class="text-muted" id="job3dates"></small></p>
                     </div>
                 </div>
             </div>
@@ -174,6 +174,47 @@
 
     <!-- Bootstrap JavaScript CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script>
+    const jobs = [];
+    const job1 = {
+        myTitle : "Wine Tasting Associate",
+        company: "Scribnerbend Vineyards",
+        startDate : "June 2017",
+        endDate : "Scribnerbend Vineyards",
+        description: "This small family own vineyard is located in Sacramento right on the Scribner bend in the American River. I helped run to front desk on my weekends in College and bartended for the wedding when needed.",
+    }
+    const job2 = {
+        myTitle : "Bookkeeper",
+        company: "BJs Restaurant & Brewhouse",
+        startDate : "April 2018",
+        endDate : "January 2019",
+        description: "Worked all positions, from hostess to server, and then was prompted to balance the books in the morning.",
+    }
+    const job3 = {
+        myTitle : "Mathematics Tutor/TA",
+        company: "Math Learning Skills Center, CSUS",
+        startDate : "January 2017",
+        endDate : "December 2017",
+        description: "I tutored and ran the mather tutoring the center twice a week. Helped and grade assigned professors class homework.",
+    }
+
+    jobs.push(job1);
+    jobs.push(job2);
+    jobs.push(job3);
+
+    for (let i = 0; i < jobs.length; i++) {
+        const job = jobs[i];
+        document.getElementById(`job${i + 1}Title`).innerHTML = job.myTitle;
+        document.getElementById(`job${i + 1}Company`).innerHTML = job.company;
+        document.getElementById(`job${i + 1}Description`).innerHTML = job.description;
+        document.getElementById(`job${i + 1}dates`).innerHTML = job.startDate + " - " + job.endDate;
+    }
+
+    </script>
+    
+
 </body>
 
 </html>

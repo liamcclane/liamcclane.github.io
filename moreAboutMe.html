@@ -40,8 +40,8 @@
         </div>
     </nav>
 
-    <div class="container-lg main">
-        <h1 class="frosty">Lia McClane</h1>
+    <div class="container-lg">
+        <h1>Lia McClane</h1>
         <article class="row">
             <aside>
                 <figure class="figure aside">
@@ -90,7 +90,7 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active">Professional Experience</a>
+                        <a class="nav-link active" href="moreAboutMe.html">Professional Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="partTime.html">Part Times</a>
@@ -106,10 +106,10 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Free Lance Web Developer</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">January 2020 - Present</small></p>
+                        <h5 class="card-title" id="job1Title"></h5>
+                        <p class="card-text" id="job1Company"></p>
+                        <p class="card-text" id="job1Description"></p>
+                        <p class="card-text"><small class="text-muted" id="job1dates"></small></p>
                     </div>
                 </div>
             </div>
@@ -119,10 +119,10 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Full Stack Web Developer</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">October 2019 - January 2020</small></p>
+                        <h5 class="card-title" id="job2Title"></h5>
+                        <p class="card-text" id="job2Company"></p>
+                        <p class="card-text" id="job2Description"></p>
+                        <p class="card-text"><small class="text-muted" id="job2dates"></small></p>
                     </div>
                 </div>
             </div>
@@ -132,14 +132,16 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Eruofins Met Laboratories</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">March 2019 - October 2019</small></p>
+                        <h5 class="card-title" id="job3Title"></h5>
+                        <p class="card-text" id="job3Company"></p>
+                        <p class="card-text" id="job3Description"></p>
+                        <p class="card-text"><small class="text-muted" id="job3dates"></small></p>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
     <footer class="bd-footer text-muted navbar-dark bg-dark">
         <div class="container-lg my-footer p-3 p-md-5">
@@ -173,7 +175,45 @@
     <!-- Bootstrap JavaScript CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script>
+    const jobs = [];
+    const job1 = {
+        myTitle : "Free Lance Web Developer",
+        company: "Various Companies",
+        startDate : "June 2017",
+        endDate : "present",
+        description: "Working on various projects for companies, friends, and personal projects. Here is where I continually expand my knowledge of the latest tech.",
+    }
+    const job2 = {
+        myTitle : "Full Stack Web Developer",
+        company: "Coding Dojo",
+        startDate : "October 2019",
+        endDate : "January 2020",
+        description: "Coding Dojo is a three month intensive boot camp. During the camp students learn to code and work with three different frameworks and become self sufficient full stack web developers. Coding Dojo gave me experience with SpringBoot, Anuglar, Node.js, Express, Flask, and Django.",
+    }
+    const job3 = {
+        myTitle : "EMC Technician",
+        company: "Eruofins Met Laboratories",
+        startDate : "March 2019",
+        endDate : "October 2019",
+        description: "Tested customer products from around the world to check for electrical compliance with the FCC and other countries standards accordingly.",
+    }
 
+    jobs.push(job1);
+    jobs.push(job2);
+    jobs.push(job3);
+
+
+    for (let i = 0; i < jobs.length; i++) {
+        const job = jobs[i];
+        document.getElementById(`job${i + 1}Title`).innerHTML = job.myTitle;
+        document.getElementById(`job${i + 1}Company`).innerHTML = job.company;
+        document.getElementById(`job${i + 1}Description`).innerHTML = job.description;
+        document.getElementById(`job${i + 1}dates`).innerHTML = job.startDate + " - " + job.endDate;
+    }
+
+    </script>
+    
 
 </body>
 
