@@ -38,11 +38,12 @@
     padding-bottom: 20px;
 }
 .frost {
+    /* background-color: rgba(26, 25, 25, 0.507); */
     background-color: rgba(255, 255, 255, 0.712);
 }
 .card {
-    margin: 10px auto;
-    min-width: 90%;
+    margin: 10px 5px;
+    min-width: 40%;
     padding: 10px 10px 10px 10px;
 }
 .card-img-top {
