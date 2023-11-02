@@ -64,27 +64,7 @@
     padding: 20px;
 }
 .my-wrapper {
-    /* too busy */
-    /* background-image: url('./../assests/repeatedLeaves.jpg'); */
-    
-    /* 7/10 not bad needs lighter card backgrounds*/
-    /* background-image: url('./../assests/repreatedBG.jpg'); */
-    
-    /* modern "hard looking" */
-    /* background-image: url('./../assests/repeatedBrick.jpg'); */
-    
-    /* modern "too rustic" */
-    /* background-image: url('./../assests/repeatedBrickRed.jpg'); */
-    
-    /* sporadic coloring */
-    /* background-image: url('./../assests/repeatedTriangles.jpg'); */
-    
-    /* too cutieys */
-    /* background-image: url('./../assests/repeatedCat.jpg'); */
-    
-    /* background-image: linear-gradient( white,rgb(255, 236, 244),white); */
-
-
+    background-color: rgb(203, 203, 203);
 }
 
 /** Small devices (landscape phones, 576px and up) **/
