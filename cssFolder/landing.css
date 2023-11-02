@@ -13,7 +13,7 @@
     /* background-image:url('./../assests/computerBG2.jpg'); */
     
     /*this on need dark behind name */
-    background-image:url('./../assests/computerBG3.jpg'); 
+    /* background-image:url('./../assests/computerBG3.jpg');  */
 
 
     /* background-image:url('./../assests/codeyBG2.jpg'); boring */
@@ -21,10 +21,19 @@
     /* background-image:url('./../assests/computerBG.jpg'); */
     /* background-image:url('./../assests/keyboardBG2.jpg'); NO */
 
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 }
-.jumbotron img {
+.jumbo-background img {
+    display: block;
+    border-radius: 1em;
+    margin: 0px auto 20px;
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.698);
+}
+.jumbo-background img:hover{
+    background-color: whitesmoke;
+}
+#profileImg {
     display: block;
     border: 0px solid black;
     border-radius: 1em;
@@ -59,7 +68,7 @@
     /* background-image: url('./../assests/repeatedLeaves.jpg'); */
     
     /* 7/10 not bad needs lighter card backgrounds*/
-    background-image: url('./../assests/repreatedBG.jpg');
+    /* background-image: url('./../assests/repreatedBG.jpg'); */
     
     /* modern "hard looking" */
     /* background-image: url('./../assests/repeatedBrick.jpg'); */

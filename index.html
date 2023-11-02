@@ -4,11 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/LM-logo.png" />
+    <link rel="icon" href="./assests/LM-logo.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./cssFolder/main.css">
     <link rel="stylesheet" href="./cssFolder/landing.css">
+     
+    <!-- FONT ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+
+    <!-- CSS–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">
+
+    
     <title>Lia's Portfolio</title>
 </head>
 
@@ -38,24 +48,74 @@
     </nav>
     <div class="container-flex my-wrapper">
         <div class="jumbotron">
-            <div class="container">
-                <div class="jumbo-background text-center p-2">
-                    <h1 class="display-4">Lia McClane</h1>
-                    <p class="lead">Full Stack Web Developer</p>
-                    <img src="./assests/rotated.jpg" alt="Lia" height="200" width="200">
-                    <a class="btn btn-success" href="./assests/McClaneResume2022.pdf" download>Download My Resume</a>
+            <div class="container-lg">
+                <div class="row  justify-content-between">
+                    <div class="col-3 jumbo-background text-center p-5">
+                        <h3>Lia McClane</h3>
+                        <p>Full Stack Web Developer</p>
+                        <img src="./assests/rotated.jpg" alt="Lia" height="200" width="200" id="profileImg">
+                        <a class="btn btn-success" href="./assests/McClaneResume2022.pdf" download>Download My Resume</a>
+                    </div>
+                    <div class="col jumbo-background text-center p-5 ml-3"> 
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>Music</h1>
+                                <img src="./assests/icons/music-note-single.svg" alt="Lia" height="200" width="200">
+                            </div>
+                            <div class="col-6">
+                                <h1>Movies</h1>
+                                <img src="./assests/icons/film_2.png" alt="Lia" height="200" width="200">
+                            </div>
+                            <div class="col-6">
+                                <h1>My Dog</h1>
+                                <img src="./assests/icons/dog.png" alt="Lia" height="200" width="200">
+                            </div>
+                            <div class="col-6">
+                                <h1>Code Stuff</h1>
+                                <img src="./assests/icons/laptop.png" alt="Lia" height="200" width="200">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <h1 class="frost my-h1 border rounded">Projects</h1>
+<!-- Standard Headings -->
+<!-- <h1><strong>HEADDING 1</strong></h1>
+<h2>Heading</h2>
+<h3>Heading</h3>
+<h4>Heading</h4>
+<h5>Heading</h5>
+<h6<strong>>Heading</strong></h6> -->
+
+<!-- Base type size -->
+<!-- <p>The base type is 15px over 1.6 line height (24px)</p> -->
+
+<!-- Other styled text tags -->
+<!-- <strong>Bolded</strong>
+<em>Italicized</em>
+<a>Colored</a>
+<u>Underlined</u> -->
+            <!-- <a class="button" href="#">Anchor button</a>
+            <button>Button element</button>
+            <input type="submit" value="submit input">
+            <input type="button" value="button input">
+             -->
+            <!-- Primary buttons -->
+            <!-- <a class="button button-primary" href="#">Anchor button</a>
+            <button class="button-primary">Button element</button>
+            <input class="button-primary" type="submit" value="submit input">
+            <input class="button-primary" type="button" value="button input"> -->
+        
+
         </div>
         <div class="row justify-content-center">
             <!--TRAVEL BUDDIES-->
             <div class="card frost">
                 <img src="./assests/travelBuddies.gif" class="card-img-top" alt="Travel Buddies">
                 <div class="card-body">
-                    <h5 class="card-title">Travel Buddies</h5>
+                    <h5 class="card-title"><strong>Travel Buddies</strong></h5>
                     <p class="card-text">I built this site to centralize friends and adventure enthusiasts alike. This
                         site helps organize and plan fun trips and events. Each trip has a host and travelers, and the
                         UI settings are dependent on that role.
@@ -80,7 +140,7 @@
             <div class="card frost">
                 <img src="./assests/lanesAndBars.gif" class="card-img-top" alt="Lanes and Bars">
                 <div class="card-body">
-                    <h5 class="card-title">ProductPlan</h5>
+                    <h5 class="card-title"><strong>ProductPlan</strong></h5>
                     <p class="card-text">This site was built with React, created from a wireframe given for a job interview</p>
                     <h6>Tech Used</h6>
                     <ul>
@@ -98,7 +158,7 @@
             <div class="card frost">
                 <img src="./assests/WatchWithMePreview.gif" class="card-img-top" alt="WatchWithMe">
                 <div class="card-body">
-                    <h5 class="card-title">WatchWithMe</h5>
+                    <h5 class="card-title"><strong>WatchWithMe</strong></h5>
                     <p class="card-text">Watch With Me was created as a Netflix clone.</p>
                     <h6>Tech Used</h6>
                     <ul>
@@ -117,7 +177,7 @@
             <div class="card frost">
                 <img src="./assests/cribbage-pro.gif" class="card-img-top" alt="Cribbage landing page">
                 <div class="card-body">
-                    <h5 class="card-title">Cribbage-Pro</h5>
+                    <h5 class="card-title"><strong>Cribbage-Pro</strong></h5>
                     <p class="card-text">This passion project was inspired by the card game Cribbage. The game as a
                         whole is an edge case. The logic to get the game working was challenging enough. Then designing
                         a responsive UI crib board was another whole monster.</p>
@@ -147,7 +207,7 @@
             <div class="card frost">
                 <img src="./assests/ssl-short.gif" class="card-img-top" alt="Spooky Spooky Library">
                 <div class="card-body">
-                    <h5 class="card-title">Spooky Spooky Library</h5>
+                    <h5 class="card-title"><strong>Spooky Spooky Library</strong></h5>
                     <p class="card-text">This project is a library manager where patrons can checkout books and librarians 
                         can manage both the book database as well as the patrons who create me accounts in the county.
                     </p>
@@ -168,7 +228,7 @@
             <!-- <div class="card frost">
                 <img src="./assests/memoryDump.PNG" class="card-img-top" alt="memoryDump">
                 <div class="card-body">
-                    <h5 class="card-title">Memory Dump</h5>
+                    <h5 class="card-title"><strong>Memory Dump</strong></h5>
                     <p class="card-text">This group project was created as a Stack Overflow clone. The team built this
                         project with <strong>SpringBoot</strong>, implemented <strong>CRUDRepositories</strong> with
                         model query calls,
@@ -193,7 +253,7 @@
             <div class="card frost">
                 <img src="./assests/burgerYumYum.gif" class="card-img-top" alt="burgerYumYum">
                 <div class="card-body">
-                    <h5 class="card-title">Burger Yum Yum</h5>
+                    <h5 class="card-title"><strong>Burger Yum Yum</strong></h5>
                     <p class="card-text">This project was made with <strong>React</strong>.
                         Users can build a single custom burger with as many ingredients as they desire.</p>
                     <h6>Tech Used</h6>
