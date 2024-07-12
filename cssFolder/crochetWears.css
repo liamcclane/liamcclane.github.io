@@ -1,0 +1,13 @@
+/* * { outline: 1px dotted red;} */
+.jumbotron{
+    color: rgb(255, 255, 255);
+    background-image:url('./../assests/crochet/crochet_shelf.jpg');
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .container {
+        background-color: rgba(0, 0, 0, 0.597);
+    }
+}
