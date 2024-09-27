@@ -25,6 +25,7 @@ const yarns = {
     'loopsAndThreadCotton' : "https://www.michaels.com/product/everyday-cotton-yarn-by-loops-threads-10717419",
     'iLoveThisCotton' : "https://www.hobbylobby.com/yarn-needle-art/yarn-tools/yarn/i-love-this-cotton-yarn/p/96066",
     'lionBrand247Cotton': "https://www.lionbrand.com/collections/all-knitting-crochet-yarn/products/24-7-cotton",
+    'caronCakes': "https://www.michaels.com/search?q=caron%20cakes&com_id=SearchBar_Recommendation_Components&path=suggest",
 };
 const alwaysSellingItems = [
     {
@@ -32,7 +33,7 @@ const alwaysSellingItems = [
         price: "20 for 4 chickens",
         yarn: "loopsAndThreadCotton",
         description: "Mix and Match these cute chicken coasters.",
-        image: './assests/crochet/multiChickenCosters.jpg'
+        image: './assests/crochet/muliChickenCoasters.jpg'
     },
     {
         title: "Solid Bandannas",
@@ -55,13 +56,28 @@ const alwaysSellingItems = [
         description: "100% Cotton. Cute lil hand wash cloths.",
         image: './assests/crochet/dottyDishCloths.jpg'
     },
-    // {
-    //     title: "Emotional Support Pickel",
-    //     price: 15.00,
-    //     yarn: "loopsAndThreadCotton",
-    //     description: "A pickel friend who will always be there for you.",
-    //     image: './assests/crochet/pickel.jpg'
-    // },
+    {
+        title: "Emotional Support Pickel",
+        price: 15.00,
+        yarn: "loopsAndThreadCotton",
+        description: "A pickel friend who will always be there for you.",
+        image: './assests/crochet/pickel.jpg'
+    },
+    {
+        title: "Dice Bag",
+        price: 10.00,
+        yarn: "iLoveThisCotton",
+        description: "Drawstring dice bag made of 100% cotton yarn, can be made in swirl or stripe pattern.",
+        image: './assests/crochet/drawStringDiceBag-side.jpg'
+    },
+
+    {
+        title: "Chunky Knit Beanie",
+        price: 10.00,
+        yarn: "caronCakes",
+        description: "KNIT beanies.",
+        image: './assests/crochet/ChunkyBeanie.jpg'
+    },
     {
         title: "Rainbow Bucket Hat",
         price: 25.00,
@@ -75,7 +91,7 @@ function createCardElement(info) {
     let ele = document.createElement('div');
     ele.className = "col row justify-content-center m-2";
     // ele.style = "width: auto;";
-    ele.innerHTML =`<div class="card pt-2" style="width: 18rem;"><a href="product.html/?${info.title}"><img class="card-img" src="${info.image}" alt="Card image cap"></a>
+    ele.innerHTML =`<div class="card pt-2" style="width: 18rem;"><a href="?${info.title.replace(" ", "")}"><img class="card-img" src="${info.image}" alt="Card image cap"></a>
         <div class="card-body">
             <h5 class="card-title">${info.title}</h5>
             <p class="card-text">${info.description} <br/><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="${yarns[info.yarn]}" target="_blank">Yarn Used</a></p>
